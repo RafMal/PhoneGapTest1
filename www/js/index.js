@@ -55,6 +55,7 @@ function onBatteryStatus(status){
     var power = document.getElementById('power');
     power.innerHTML = "Bateria: " + status.level;
     power.innerHTML = power.innerHTML + " | hejka";
+    power.innerHTML = power.innerHTML + "<br />Do rozładowania: " + status.dischargingTime;
 }
 
 app.initialize();
